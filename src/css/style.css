@@ -10,4 +10,60 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-/* Add your code here */
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(84, 161, 84);
+  align-items: center;
+}
+
+.card {
+  background-color: white;
+  height: 350px;
+  width: 250px;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgb(0, 0, 0, 0.4);
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.number-topleft,
+.number-bottomright {
+  font-size: 60px;
+  font-weight: bold;
+  color: red;
+}
+
+.number-topleft {
+  align-self: flex-start;
+  margin-bottom: auto;
+  /* could remove margin-bottom and use flex-direction: space-between instead on line 30 */
+}
+
+.number-bottomright {
+  align-self: flex-end;
+  margin-top: auto;
+  /* see line 44 */
+}
+
+.shape {
+  font-size: 80px;
+  color: red;
+  text-align: center;
+}
+
+.generate-button {
+  position: relative;
+  right: 25px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
